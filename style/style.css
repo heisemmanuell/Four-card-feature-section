@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 97%);
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: hsl(234, 12%, 34%);
+  font-family: "Poppins", sans-serif; 
+}
+
+header {
+  justify-content: center;
+  text-align: center;
+}
+
+.first-header {
+  font-weight: 150;
+  margin-bottom: 0rem;
+}
+
+.second-header {
+  font-weight: 500;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: fit-content;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+section{
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+  width: 300px;
+  max-width: 90vw;
+  height: 210px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0.6rem 0.3rem rgba(0,0,0,0.1);
+}
+
+section img{
+  position: absolute;
+  bottom: 2.1rem;
+  right: 2rem;
+}
+
+section h3{
+  margin-bottom: 0;
+}
+
+section p{
+  margin-top: 0;
+}
+
+.card-header {
+  height: 0.3rem;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cyan { background-color: hsl(180, 62%, 55%); }
+.red { background-color: hsl(0, 78%, 62%); }
+.orange { background-color: hsl(34, 97%, 64%); }
+.blue { background-color: hsl(212, 86%, 64%); }
+
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 600px;
+    align-items: start;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    margin: 0 auto;
+  }
+
+  .grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .Supervisor-section {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .team-builder-section {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: center;
+    margin-bottom: 350px;
+    row-gap: 20px;
+  }
+
+  .calculator-section {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    margin: 0 auto;
+  }
+
+  .karma-section {
+    margin-top: 300px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: center;
+  }
+}
